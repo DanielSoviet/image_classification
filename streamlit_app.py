@@ -1,6 +1,3 @@
-from google.colab import drive
-drive.mount('/content/drive')
-
 import streamlit as st
 import numpy as np
 import cv2
@@ -8,11 +5,11 @@ import tensorflow as tf
 from PIL import Image
 
 # Load the trained TensorFlow model
-model_path = "/content/drive/MyDrive/models/keras_model.h5"
+model_path = "keras_model.h5"
 model = tf.keras.models.load_model(model_path)
 
 # Load the labels
-class_labels = open("/content/drive/MyDrive/models/labels.txt", "r").readlines()
+class_labels = open("labels.txt", "r").readlines()
 st.title("Image Classification Animals")
 st.header("Animals: Dog, Horse, Elephant, Butterfly, Chicken, Cat, Cow, Sheep, Spider, Squirrel.")
 st.write("Upload your Image for image classification")
@@ -35,5 +32,3 @@ if uploaded_image is not None:
 
     st.write(f"Predicted Class: {predicted_class}")
     st.write(f"Confidence: {confidence:.2f}")  # Display confidence with 2 decimal places
-
-!streamlit run image.py & npx localtunnel --port 8501 & curl ipv4.icanhazip.com
