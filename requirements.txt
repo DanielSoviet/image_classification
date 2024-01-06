@@ -3,7 +3,7 @@
 # requests
 
 # Core
-streamlit==1.11.0
+streamlit==1.29.0
 
 # Utils
 openai
@@ -11,9 +11,7 @@ transformers
 keybert
 plotly
 
-tensorflow==2.10.0
-tensorboard==2.10.1
+tensorflow==2.15.0
 causalimpact
 # fbprophet
 torch
-# pystan==2.19.1.1
