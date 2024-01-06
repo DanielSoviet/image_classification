@@ -1,5 +1,8 @@
 !pip -q install streamlit
 
+from google.colab import drive
+drive.mount('/content/drive')
+
 import streamlit as st
 import numpy as np
 import cv2
