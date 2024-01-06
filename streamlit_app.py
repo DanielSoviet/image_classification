@@ -1,4 +1,6 @@
 $ pip install tensorflow
+$ pip install streamlit
+$ pip install numpy
 
 import streamlit as st
 import numpy as np
