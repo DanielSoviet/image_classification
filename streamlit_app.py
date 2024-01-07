@@ -26,5 +26,5 @@ if uploaded_image is not None:
     predicted_class = class_labels[predicted_class_index]
     confidence = prediction[0][predicted_class_index]
 
-    st.write(f"It is: {predicted_class}")
+    st.write(f"Predicted Class: {predicted_class}")
     st.write(f"Confidence: {confidence:.2f}")
